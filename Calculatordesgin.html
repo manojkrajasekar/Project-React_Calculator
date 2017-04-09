@@ -3,101 +3,111 @@
   	<title>Calculator</title>
 	<head>
 		<style type="text/css">
+			div.calculator {
+				border: solid 1px grey;
+				margin: 0 auto;
+				width: 395px;
+				height: 585px;
+				float: center;
+				box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+				font-family: "tahoma"
+			}
 
-					div.calculator {
-						border: solid 1px grey;
-						margin: 0 auto;
-						width: 35%;
-						height: 570px;
-						float: center;
+			div.calculator  > div.display {
+				height: 145px;
+				border-bottom: solid 1px #cecece;
+				padding: 2px 2px 2px 2px;
+				text-align: right;
+			}
 
-					}
-					div.calculator  > div.display {
-						margin: 10px 0px 10px 10px;
-						border: solid 1px grey;
-						background-color: white;
-						width: 69%;
-						height: 80px;
-						float: center;
-						overflow: scroll;
-							
-					}
-					div.calculator > div.inputs {
-						padding: 10px;
-						height: 78%;
-						background-color: white;
-						margin: 10px 0px 10px 10px;
-						
-					}
-                    div.calculator  div.buttons {
-							
-						display: flex;
-						display: -webkit-flex;
-						flex-direction: row;
-					    -webkit-flex-direction: row;
-					}
-					div.button {
-						border: solid 1px #ccc;
-						padding: 20px;
-						min-width: 22px;
-						height: 15px;
-						margin: 13px 15px 13px 15px;
-						text-align: center;
-					}
-					div.button:hover {
-					border: solid 1px none;
-					background-color: #ccc
-					}
-					div.button.command {
+			div.calculator > div.display > div.sub {
+				color: gray;
+				overflow-x: auto;
+				font-size: 17px;
+			}
 
-					}
-					div.button.number {
+			div.calculator > div.display > div.inner {
+				background-color: white;
+				font-size: 25px;
+			}
+
+			div.calculator > div.inputs {
+				padding: 10px;
+				height: 71px;
+			}
+
+			div.calculator  div.buttons {
+				display: flex;
+				display: -webkit-flex;
+				flex-direction: row;
+				-webkit-flex-direction: row;
+			}
+
+			div.button {
+				border: solid 1px #ccc;
+				padding: 20px;
+				min-width: 22px;
+				height: 15px;
+				margin: 13px 15px 13px 15px;
+				text-align: center;
+			}
+
+			div.button:hover {
+				border: solid 1px none;
+				background-color: #ccc;
+			}
+
+			div.button.command {
+			
+			}
+
+			div.button.number {
 					
-					}
-					div.button.numbere {
-
-					background-color: skyblue;
-					
-					}
+			}		
 		</style>
 	</head>
 	<body>
 		<div class="calculator">
-						<div class="display">
-							<span>54845116848102154879659559494951841845268974692663284871213</span>
-						</div>
-				<div class="inputs">
-						<div class ="buttons">
-							<div class="button command">(</div>
-							<div class="button command">)</div>
-							<div class="button command">%</div>
-							<div class="button command">AC</div>
-						</div>
-						<div class ="buttons">
-							<div class="button number">7</div>
-							<div class="button number">8</div>
-							<div class="button number">9</div>
-							<div class="button command">%</div>
-						</div>
-						<div class ="buttons">
-							<div class="button number">4</div>
-							<div class="button number">5</div>
-							<div class="button number">6</div>
-							<div class="button command">*</div>
-						</div>
-						<div class ="buttons">
-							<div class="button number">1</div>
-							<div class="button number">2</div>
-							<div class="button number">3</div>
-							<div class="button command">-</div>
-						</div>
-						<div class ="buttons">
-							<div class="button number">0</div>
-							<div class="button number">.</div>
-							<div class="button numbere">=</div>
-							<div class="button command">+</div>
-						</div>
+			<div class="display">
+				<div class ="inner">
+								<span>10</span>
+								<span>+</span>
+								<span>40</span>
 				</div>
+				<span>5484511684810215487965955949495184184526</span>
+			</div>
+			<div class="inputs">
+				<div class ="buttons">
+					<div class="button command">(</div>
+					<div class="button command">)</div>
+					<div class="button command">%</div>
+					<div class="button command">AC</div>
+				</div>
+				<div class ="buttons">
+					<div class="button number">7</div>
+					<div class="button number">8</div>
+					<div class="button number">9</div>
+					<div class="button command">/</div>
+				</div>
+				<div class ="buttons">
+					<div class="button number">4</div>
+					<div class="button number">5</div>
+					<div class="button number">6</div>
+					<div class="button command">*</div>
+				</div>
+				<div class ="buttons">
+					<div class="button number">1</div>
+					<div class="button number">2</div>
+					<div class="button number">3</div>
+					<div class="button command">-</div>
+				</div>
+				<div class ="buttons">
+					<div class="button number">0</div>
+					<div class="button number">.</div>
+					<div class="button command">=</div>
+					<div class="button command">+</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

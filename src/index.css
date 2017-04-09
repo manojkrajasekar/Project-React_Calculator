@@ -1,5 +1,61 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+div.calculator {
+	border: solid 1px grey;
+	margin: 0 auto;
+	width: 395px;
+	height: 585px;
+	float: center;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	font-family: "tahoma"
 }
+
+div.calculator  > div.display {
+	height: 145px;
+	border-bottom: solid 1px #cecece;
+	padding: 2px 2px 2px 2px;
+	text-align: right;
+}
+
+div.calculator > div.display > div.sub {
+	color: gray;
+	overflow-x: auto;
+	font-size: 17px;
+}
+
+div.calculator > div.display > div.inner {
+	background-color: white;
+	font-size: 25px;
+}
+
+div.calculator > div.inputs {
+	padding: 10px;
+	height: 71px;
+}
+
+div.calculator  div.buttons {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+
+div.button {
+	border: solid 1px #ccc;
+	padding: 20px;
+	min-width: 22px;
+	height: 15px;
+	margin: 13px 15px 13px 15px;
+	text-align: center;
+}
+
+div.button:hover {
+	border: solid 1px none;
+	background-color: #ccc;
+}
+
+div.button.command {
+
+}
+
+div.button.number {
+					
+}               
